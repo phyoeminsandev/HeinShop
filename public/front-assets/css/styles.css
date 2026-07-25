@@ -10,6 +10,30 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /* ==========================================
+   HeinShop Custom Styles (Modern UI Tweaks)
+   ========================================== */
+
+/* Hero Banner Gradient */
+.hero-header {
+  background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-dark) 100%);
+}
+
+/* Product Card Hover Effect */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Product Image Uniform Size */
+.product-img {
+  height: 250px;
+  object-fit: cover;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
